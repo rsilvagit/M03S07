@@ -10,7 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-string connectionString = "Server=localhost;Database=FichaCadastro;Trusted_Connection=True;";
+string connectionString = "Server=localhost;Database=FichaCadastro;Trusted_Connection=True;TrustServerCertificate=True;";
 builder.Services.AddDbContext<FichaCadastroContextDB>(options => options.UseSqlServer(connectionString));
 
 var app = builder.Build();
