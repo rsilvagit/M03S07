@@ -1,4 +1,8 @@
-﻿namespace FichaCadastroAPI.Model
+﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
+
+namespace FichaCadastroAPI.Model
 {
     public class FichaModel
     {
