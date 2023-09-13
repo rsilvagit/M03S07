@@ -1,6 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using FichaCadastroAPI.Base;
+using Microsoft.VisualBasic;
+using System.Collections.ObjectModel;
 
 namespace FichaCadastroAPI.Model
 {
@@ -15,6 +17,7 @@ namespace FichaCadastroAPI.Model
         public string Email { get; set; }
 
         public DateTime DataNascimento { get; set; }
+        public Collection<DetalheModel> DetalheModels { get; set; }
 
     }
 }
