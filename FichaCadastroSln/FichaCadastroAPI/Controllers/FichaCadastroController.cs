@@ -17,6 +17,7 @@ namespace FichaCadastroAPI.Controllers
             _mapper = mapper;
             _db = db;
         }
+        
         [HttpPost]
         public ActionResult Post() {
             return Ok();

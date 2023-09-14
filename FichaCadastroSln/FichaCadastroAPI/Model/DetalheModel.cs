@@ -15,6 +15,6 @@ namespace FichaCadastroAPI.Model
         [Required]
         public bool Situacao { get; set; }
         [Required]
-        public FichaModel FichaModel { get; set; }
+        public FichaModel Ficha { get; set; }
     }
 }
